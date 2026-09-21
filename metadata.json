@@ -1,0 +1,6 @@
+{
+  "name": "Road Trip Games",
+  "description": "A vibrant mobile-optimized road trip activity app featuring Road Trip Questions, Would You Rather, 50-state License Plate Game, and Tarot Reading with the Dark Forest Guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

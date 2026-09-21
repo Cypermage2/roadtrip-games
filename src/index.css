@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+}
+
+.font-display {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+/* 3D Dice Perspective and Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Custom bounce and shake animation keyframes */
+@keyframes dice-shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-8px, -12px) rotate(-15deg); }
+  40% { transform: translate(10px, 6px) rotate(18deg); }
+  60% { transform: translate(-12px, 8px) rotate(-10deg); }
+  80% { transform: translate(8px, -6px) rotate(12deg); }
+}
+
+.animate-dice-shake {
+  animation: dice-shake 0.5s ease-in-out infinite;
+}
